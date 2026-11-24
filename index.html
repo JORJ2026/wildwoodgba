@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Wildwood - GBA survival game</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+<main id="stage">
+  <div id="wrap"><canvas id="canvas" width="240" height="160" tabindex="0"></canvas></div>
+  <div id="msg">Loading...</div>
+  <div id="bar">
+    <button id="fs">Full screen (F)</button><button id="pause">Pause</button><button id="mute">Mute</button>
+    <button id="pick" type="button">Load another ROM</button><input type="file" id="rom" accept=".gba" hidden>
+    <small>Arrows = D-pad &middot; Z = A &middot; X = B &middot; A / S = L / R &middot; Enter = Start &middot; Backspace = Select</small>
+  </div>
+</main>
+<script src="js/coi.js"></script>
+<script type="module" src="js/app.js"></script>
+</body></html>
